@@ -9,17 +9,13 @@ function menu()
     const navHeader=document.createElement('div');
     navHeader.classList.add('nav-header');
 
-    // const spanHeader=document.createElement('span');
-    // spanHeader.textContent="Chill-Pill";
-    // const paraHeader=document.createElement('p');
-    // paraHeader.textContent="Icecream";
     const spanHeader=document.createElement("img");
     spanHeader.src="../src/dssss.svg"
     spanHeader.style.width="200px"
-    spanHeader.style.height="100px"
+    spanHeader.style.height="150px"
 
     navHeader.appendChild(spanHeader);
-    // navHeader.appendChild(paraHeader);
+   
 
 
     const navBar=document.createElement('div');
