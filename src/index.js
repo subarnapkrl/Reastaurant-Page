@@ -4,7 +4,7 @@ import { initialPageLoad } from './initial-page-load.js';
 import { menu } from './menu.js';
 import { contact } from './contact.js';
 
- initialPageLoad();
+
 const body=document.querySelector('body')
     
 
@@ -16,10 +16,6 @@ const body=document.querySelector('body')
     navHeader.classList.add('nav-header');
     
 
-    // const spanHeader=document.createElement('span');
-    // spanHeader.textContent="Chill-Pill";
-    // const paraHeader=document.createElement('p');
-    // paraHeader.textContent="Icecream";
     const spanHeader=document.createElement("img");
     spanHeader.src="../src/dssss.svg"
     spanHeader.style.width="200px"
@@ -27,7 +23,7 @@ const body=document.querySelector('body')
 
 
     navHeader.appendChild(spanHeader);
-    // navHeader.appendChild(paraHeader);
+    
 
 
     const navBar=document.createElement('div');
@@ -71,10 +67,15 @@ const body=document.querySelector('body')
 body.append(nav)
     //NAVBAR SECTION END
 
+     initialPageLoad();
 
-const homeLinks=document.querySelector('#home');
-homeLinks.addEventListener('click',()=>{
-    alert('You clicked HOME PAGE')
+
+
+
+
+
+homeLink.addEventListener('click',()=>{
+   //  alert('You clicked HOME PAGE')
     
      clearCOntent();
      menuLink.classList.remove('current');
@@ -85,27 +86,36 @@ homeLinks.addEventListener('click',()=>{
    
 })
 
+const btn=document.querySelector('.btn');
+btn.addEventListener('click',()=>{
+   // alert('You clicked on ORDER NOW Button');
+   clearCOntent()
+   menuLink.classList.add('current');
+   menu()
+   homeLink.classList.remove('current');
+     contactLink.classList.remove('current');
+})
 
 
-  const menuLinks=document.querySelector('#menu');
- menuLinks.addEventListener('click',()=>{
-    alert('You clicked MENU PAGE')
+
+ menuLink.addEventListener('click',()=>{
+   //  alert('You clicked MENU PAGE')
     
      clearCOntent();
-     homeLink.classList.remove('current');
-     contactLink.classList.remove('current');
+     
      menuLink.classList.add('current');
     menu();
+    homeLink.classList.remove('current');
+     contactLink.classList.remove('current');
     
  })
 
- const contactLinks=document.querySelector('#contact');
- contactLinks.addEventListener('click',()=>{
-    alert('You clicked CONTACT PAGE')
+ contactLink.addEventListener('click',()=>{
+   //  alert('You clicked CONTACT PAGE')
     
      clearCOntent();
      homeLink.classList.remove('current');
-     contactLink.classList.remove('current');
+     menuLink.classList.remove('current');
      contactLink.classList.add('current');
     contact();
  })
@@ -114,11 +124,11 @@ homeLinks.addEventListener('click',()=>{
 
  function clearCOntent()
  {
-   const content=document.querySelector('#content');
+   const body=document.querySelector('body')
    
   const main=document.querySelector('main');
     
-       content.removeChild(main)
+       body.removeChild(main)
     
    
    

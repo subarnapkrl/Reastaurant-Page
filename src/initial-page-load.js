@@ -1,70 +1,8 @@
 function initialPageLoad()
 {
-    // const body=document.querySelector('body')
-     const content=document.querySelector('#content')
+     const body=document.querySelector('body')
 
-    // //NAVBAR SECTION START
-
-    // const nav=document.createElement('nav');
-
-    // const navHeader=document.createElement('div');
-    // navHeader.classList.add('nav-header');
-    
-
-    // // const spanHeader=document.createElement('span');
-    // // spanHeader.textContent="Chill-Pill";
-    // // const paraHeader=document.createElement('p');
-    // // paraHeader.textContent="Icecream";
-    // const spanHeader=document.createElement("img");
-    // spanHeader.src="../src/dssss.svg"
-    // spanHeader.style.width="200px"
-    // spanHeader.style.height="150px"
-
-
-    // navHeader.appendChild(spanHeader);
-    // // navHeader.appendChild(paraHeader);
-
-
-    // const navBar=document.createElement('div');
-    // const ulList=document.createElement('ul');
-    // ulList.classList.add('ulList')
-
-    // const homeList=document.createElement("li");
-    // homeList.classList.add('list');
-    // const homeLink=document.createElement('a');
-    // homeLink.classList.add("link","current");
-    // homeLink.setAttribute('id','home');
-    // homeLink.textContent='Home';
-
-    // homeList.append(homeLink);
-    // ulList.append(homeList);
-
-    // const menuList=document.createElement("li");
-    // menuList.classList.add('list');
-    // const menuLink=document.createElement('a');
-    // menuLink.classList.add("link");
-    // menuLink.setAttribute('id','menu');
-    // menuLink.textContent='Menu';
-
-    // menuList.append(menuLink);
-    // ulList.append(menuList);
-
-    // const contactList=document.createElement("li");
-    // contactList.classList.add('list');
-    // const contactLink=document.createElement('a');
-    // contactLink.classList.add("link");
-    // contactLink.setAttribute('id','contact');
-    // contactLink.textContent='Contact';
-
-    // contactList.append(contactLink);
-    // ulList.append(contactList);
-
-    // navBar.append(ulList);
-
-    // nav.append(navHeader);
-    // nav.append(navBar);
-
-    // //NAVBAR SECTION END
+   
 
     //MAIN SECTION START
 
@@ -96,7 +34,7 @@ function initialPageLoad()
     //END MAIN SECTION
 
 
-    content.append(main);
+    body.append(main);
 
 
 

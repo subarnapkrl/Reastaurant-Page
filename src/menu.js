@@ -1,6 +1,6 @@
 function menu()
 {
-     const content=document.querySelector('#content')
+    const body=document.querySelector('body')
 
 
     //MAIN SECTION START
@@ -202,7 +202,7 @@ function menu()
     main.append(container);
 
     
-    content.append(main);
+    body.append(main);
 
 }
 export {menu};
