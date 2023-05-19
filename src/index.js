@@ -10,7 +10,12 @@ initialPageLoad();
 const homeLink=document.querySelector('#home');
 homeLink.addEventListener('click',()=>{
     alert('You clicked HOME PAGE')
-     clearCOntent()
+    
+     clearCOntent();
+     menuLink.classList.remove('current');
+     contactLink.classList.remove('current');
+     homeLink.classList.add('current');
+
     initialPageLoad();
    
 })
@@ -20,7 +25,11 @@ homeLink.addEventListener('click',()=>{
   const menuLink=document.querySelector('#menu');
  menuLink.addEventListener('click',()=>{
     alert('You clicked MENU PAGE')
-     clearCOntent()
+    
+     clearCOntent();
+     homeLink.classList.remove('current');
+     contactLink.classList.remove('current');
+     menuLink.classList.add('current');
     menu();
     
  })
@@ -28,7 +37,11 @@ homeLink.addEventListener('click',()=>{
  const contactLink=document.querySelector('#contact');
  contactLink.addEventListener('click',()=>{
     alert('You clicked CONTACT PAGE')
-     clearCOntent()
+    
+     clearCOntent();
+     homeLink.classList.remove('current');
+     contactLink.classList.remove('current');
+     contactLink.classList.add('current');
     contact();
  })
 
@@ -40,7 +53,6 @@ homeLink.addEventListener('click',()=>{
    const nav=document.querySelector('nav');
   const main=document.querySelector('main');
     
-        content.removeChild(nav)
        content.removeChild(main)
     
    

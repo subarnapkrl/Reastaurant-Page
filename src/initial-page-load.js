@@ -1,5 +1,6 @@
 function initialPageLoad()
 {
+    const body=document.querySelector('body')
     const content=document.querySelector('#content')
 
     //NAVBAR SECTION START
@@ -8,6 +9,7 @@ function initialPageLoad()
 
     const navHeader=document.createElement('div');
     navHeader.classList.add('nav-header');
+    
 
     // const spanHeader=document.createElement('span');
     // spanHeader.textContent="Chill-Pill";
@@ -94,7 +96,7 @@ function initialPageLoad()
     //END MAIN SECTION
 
 
-    content.append(nav);
+    body.appendChild(nav);
     content.append(main);
 
 
