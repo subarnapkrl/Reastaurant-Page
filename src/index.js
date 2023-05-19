@@ -59,7 +59,7 @@ const body=document.querySelector('body')
     const contactLink=document.createElement('a');
     contactLink.classList.add("link");
     contactLink.setAttribute('id','contact');
-    contactLink.textContent='Contact';
+    contactLink.textContent='Contacts';
 
     contactList.append(contactLink);
     ulList.append(contactList);
