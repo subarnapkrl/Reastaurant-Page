@@ -1,5 +1,6 @@
 import './style.css';
 import homeImg from './home.jpg';
+import svg from './dssss.svg'
 import { initialPageLoad } from './initial-page-load.js';
 import { menu } from './menu.js';
 import { contact } from './contact.js';
@@ -17,7 +18,7 @@ const body=document.querySelector('body')
     
 
     const spanHeader=document.createElement("img");
-    spanHeader.src="../src/dssss.svg"
+    spanHeader.src=svg;
     spanHeader.style.width="200px"
     spanHeader.style.height="150px"
 
