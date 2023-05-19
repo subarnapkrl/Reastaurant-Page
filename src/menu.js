@@ -1,5 +1,16 @@
+import img1s from'./item1.png'
+import img2s from'./item2.png'
+import img3s from'./item3.png'
+import img4s from'./item4.png'
+import img5s from'./item5.png'
+import img6s from'./item6.png'
+import img7s from'./item7.png'
+import img8s from'./item9.png'
+
 function menu()
 {
+    // "../src/item2.png"
+
     const body=document.querySelector('body')
 
 
@@ -22,7 +33,7 @@ function menu()
     const items1=document.createElement('div');
     items1.classList.add('items');
     const img1=document.createElement("img");
-    img1.src="../src/item1.png";
+    img1.src=img1s;
     items1.append(img1);
 
     const h21=document.createElement('h2');
@@ -43,7 +54,7 @@ function menu()
     const items2=document.createElement('div');
     items2.classList.add('items');
     const img2=document.createElement("img");
-    img2.src="../src/item2.png";
+    img2.src=img2s;
     items2.append(img2);
 
     const h22=document.createElement('h2');
@@ -65,7 +76,7 @@ function menu()
     const items3=document.createElement('div');
     items3.classList.add('items');
     const img3=document.createElement("img");
-    img3.src="../src/item3.png";
+    img3.src=img3s;
     items3.append(img3);
 
     const h23=document.createElement('h2');
@@ -86,7 +97,7 @@ function menu()
     const items4=document.createElement('div');
     items4.classList.add('items');
     const img4=document.createElement("img");
-    img4.src="../src/item4.png";
+    img4.src=img4s;
     items4.append(img4);
 
     const h24=document.createElement('h2');
@@ -107,7 +118,7 @@ function menu()
     const items5=document.createElement('div');
     items5.classList.add('items');
     const img5=document.createElement("img");
-    img5.src="../src/item5.png";
+    img5.src=img5s;
     items5.append(img5);
 
     const h25=document.createElement('h2');
@@ -129,7 +140,7 @@ function menu()
     const items6=document.createElement('div');
     items6.classList.add('items');
     const img6=document.createElement("img");
-    img6.src="../src/item6.png";
+    img6.src=img6s;
     items6.append(img6);
 
     const h26=document.createElement('h2');
@@ -150,7 +161,7 @@ function menu()
     const items7=document.createElement('div');
     items7.classList.add('items');
     const img7=document.createElement("img");
-    img7.src="../src/item7.png";
+    img7.src=img7s;
     items7.append(img7);
 
     const h27=document.createElement('h2');
@@ -171,7 +182,7 @@ function menu()
     const items8=document.createElement('div');
     items8.classList.add('items');
     const img8=document.createElement("img");
-    img8.src="../src/item9.png";
+    img8.src=img8s;
     items8.append(img8);
 
     const h28=document.createElement('h2');
