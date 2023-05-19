@@ -5,41 +5,46 @@ import { menu } from './menu.js';
 import { contact } from './contact.js';
 
 initialPageLoad();
-function switchTabs(){
+
 
 const homeLink=document.querySelector('#home');
 homeLink.addEventListener('click',()=>{
-    clearCOntent()
+    alert('You clicked HOME PAGE')
+     clearCOntent()
     initialPageLoad();
+   
 })
 
 
 
   const menuLink=document.querySelector('#menu');
  menuLink.addEventListener('click',()=>{
-    clearCOntent()
+    alert('You clicked MENU PAGE')
+     clearCOntent()
     menu();
+    
  })
 
  const contactLink=document.querySelector('#contact');
  contactLink.addEventListener('click',()=>{
-    clearCOntent()
+    alert('You clicked CONTACT PAGE')
+     clearCOntent()
     contact();
  })
 
-}
 
-function clearCOntent()
-{
+
+ function clearCOntent()
+ {
    const content=document.querySelector('#content');
    const nav=document.querySelector('nav');
-   const main=document.querySelector('main');
-    if(nav && main){
+  const main=document.querySelector('main');
+    
         content.removeChild(nav)
-        content.removeChild(main)
-    }
+       content.removeChild(main)
+    
    
    
-}
-switchTabs()
+ }
+
 
